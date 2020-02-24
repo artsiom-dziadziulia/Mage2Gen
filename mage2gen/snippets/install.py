@@ -52,7 +52,7 @@ class InstallSnippet(Snippet):
 		self.add_class(install_schema)
 
 		install_data = Phpclass('Setup\\InstallData',implements=['InstallDataInterface'],dependencies=[
-			'Magento\\Framework\\Setup\\InstallDataInterface',
+			'Magento\\Framework\\Setup\\InstallDataIInterface',
 			'Magento\\Framework\\Setup\\ModuleContextInterface',
 			'Magento\\Framework\\Setup\\ModuleDataSetupInterface'])
 		install_data.add_method(Phpmethod('install',
